@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with HTML</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+
+        }
+        form input{
+            margin-top: 15px;
+            height: 35px;
+            border-radius: 8px;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+        h2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        .cntnr{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+      <a href="">Home</a>
+      <a href="">Profile</a>
+      <a href="">Blog</a>
+      <a href="">Login</a>
+      <a href="">About</a>
+    </nav>
+    <div class="cntnr">
+      <form>
+        <h2>Please log in</h2>
+        <input type="email" placeholder="Your E-mail" required>
+        <input type="password" placeholder="Your password" required>
+        <input type="number" placeholder="Your phone number" required>
+        <input type="submit" value="Submit">
+      </form></div>
+</body>
+</html>

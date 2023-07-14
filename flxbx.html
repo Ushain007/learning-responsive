@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .cntnr{
+            border: 3px solid black;
+            display: flex;
+            justify-content: space-around;
+            height: 150px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .cntnr:hover{
+            background-color: aquamarine;
+        }
+        .box{
+            border: 3px dashed green;
+            width: 180px;
+            height: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .flx{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: cornflowerblue;
+        }
+        .flx:hover{
+            color: blue;
+            text-decoration: underline;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="flx">Flexbox Layout</h1>
+    <div class="cntnr">
+      <div class="box">Box-1</div>
+      <div class="box">Box-2</div>
+      <div class="box">Box-3</div>
+      <div class="box">Box-4</div>
+      <div class="box">Box-5</div>
+      <div class="box">Box-6</div>
+    </div>
+</body>
+</html>
